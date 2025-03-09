@@ -3,7 +3,7 @@
     --orange: #FF8110;
     --blue: #5072FF;
     --main-bg: #FFF;
-    --main-color: var(--orange);
+    --main-color: var(--blue);
     --greenFilter: invert(56%) sepia(64%) saturate(1960%) hue-rotate(83deg) brightness(108%) contrast(119%);
     --orangeFilter: invert(64%) sepia(30%) saturate(5788%) hue-rotate(350deg) brightness(99%) contrast(104%);
     --blueFilter: invert(40%) sepia(92%) saturate(2157%) hue-rotate(214deg) brightness(98%) contrast(107%);
@@ -15,45 +15,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--main-color);
+    color: var(--blue);
 }
 
 /* 라틴 폰트 적용 */
 
 @font-face {
-    font-family: 'Ancient Stroke';
-    src: url(./fonts/latine/Latine_AncientStroke-Regular.otf);
+    font-family: 'Blue_zip';
+    src: url(./fonts/digbat/PixelDingbat-Regular.otf);
 }
 
 @font-face {
-    font-family: 'Black Cat';
-    src: url(./fonts/latine/latine_BLACKCAT-Regular.otf);
+    font-family: 'Brew Askew';
+    src: url(./fonts/digbat/dingbat_BrewAskew.otf);
 }
 
 @font-face {
-    font-family: 'Digital Classic';
-    src: url(./fonts/latine/latine_digitalclassic-Regular.ttf);
+    font-family: 'Christmas Cat';
+    src: url(./fonts/digbat/dingbat_ChristmasCat-SVG.otf) format('woff2');
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'From The Cartoon';
-    src: url(./fonts/latine/latin_fromthecartoon.otf);
+    font-family: 'fluttering';
+    src: url(./fonts/digbat/dingbat_Flutturing-Regular.otf) format('woff2');
 }
 
 @font-face {
-    font-family: 'Ganggangsullae';
-    src: url(./fonts/latine/gangGangSchiele-Regular.otf);
+    font-family: 'Geo Zoo';
+    src: url(./fonts/digbat/dingbat_Geozoo.otf);
 }
 
 @font-face {
-    font-family: 'Mellowsans';
-    src: url(./fonts/latine/latine_Mellowsans-Regular.otf);
+    font-family: '자음꽃';
+    src: url(./fonts/digbat/dingbat_flower-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Square Askew';
-    src: url(./fonts/latine/latine_SquareAskew.otf);
+    font-family: '표아이';
+    src: url(./fonts/digbat/dingbat_pyooai-Regular.otf);
 }
+
 
 body    {
     margin: 0;
@@ -89,8 +91,9 @@ p:focus {
     outline: none;
 }
 
+
 .filter {
-    filter: var(--orangeFilter);
+    filter: var(--blueFilter);
 }
 
 .rotateRight {
