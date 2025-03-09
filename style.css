@@ -18,15 +18,26 @@
     color: var(--main-color);
 }
 
+/* 라틴 폰트 적용 */
 
 @font-face {
-    font-family: 'black cat';
+    font-family: 'Ancient Stroke';
+    src: url(./fonts/latine/Latine_AncientStroke-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Black Cat';
     src: url(./fonts/latine/latine_BLACKCAT-Regular.otf);
 }
 
 @font-face {
     font-family: 'Digital Classic';
     src: url(./fonts/latine/latine_digitalclassic-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'From The Cartoon';
+    src: url(./fonts/latine/latin_fromthecartoon.otf);
 }
 
 @font-face {
@@ -37,6 +48,18 @@
 @font-face {
     font-family: 'Mellowsans';
     src: url(./fonts/latine/latine_Mellowsans-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Square Askew';
+    src: url(./fonts/latine/latine_SquareAskew.otf);
+}
+
+/* 딩벳 폰트 적용 */
+
+@font-face {
+    font-family: '표아이';
+    src: url(./fonts/digbat/dingbat_pyooai-Regular.otf);
 }
 
 body    {
@@ -64,6 +87,13 @@ img {
 
 p   {
     font-size: 72px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 50vh 0;
+}
+
+p::-webkit-scrollbar {
+    display: none;
 }
 
 p:focus {
@@ -94,13 +124,14 @@ p:focus {
 
 .textContainer  {
     position: relative;
-    top: 0px;
+    top: 0;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 160px);
     padding: 0px 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow-y: visible;
 }
 
 .selectorContainer  {
