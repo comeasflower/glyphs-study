@@ -38,6 +38,11 @@ function setCursorToEnd(element) {
 
 function changeFont(button) {
     const fontName = button.innerText; // 버튼에 적힌 텍스트 가져오기
+    if (fontName == "표아이") {
+        text.style.lineHeight = "70%";
+    } else {
+        text.style.lineHeight = "120%";
+    }
     text.style.fontFamily = fontName; // p 태그의 font-family 변경
     text.innerText = getRandomSentence(fontName); // 랜덤 문장 변경
     // 모든 버튼에서 selected 클래스 제거
