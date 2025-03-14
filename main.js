@@ -57,3 +57,12 @@ function changeFont(button) {
 buttons.forEach(button => {
     button.addEventListener("click", () => changeFont(button));
 });
+
+text.addEventListener("input", () => {
+    let font = window.getComputedStyle(text).fontFamily;
+    
+    // 새롭게 추가되는 <div>에도 동일한 폰트를 적용
+    text.querySelectorAll("div").forEach(div => {
+        div.style.fontFamily = font;
+    });
+});
